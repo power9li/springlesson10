@@ -1,0 +1,56 @@
+<html lang="zh-CN" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>list my info</title>
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <div class="container">
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">UserInfo in session</h3>
+            </div>
+            <div class="panel-body">
+                <dl class="dl-horizontal">
+                    <dt>session.userInfo.name:</dt>
+                    <dd><span th:text="${session.userInfo.name}"></span></dd>
+                </dl>
+                <dl class="dl-horizontal">
+                    <dt>session.userInfo.age:</dt>
+                    <dd><span th:text="${session.userInfo.age}"></span></dd>
+                </dl>
+
+            </div>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Tomcat Server Info</h3>
+            </div>
+            <div class="panel-body">
+                <dl class="dl-horizontal">
+                    <dt>tomcat.server.ip:</dt>
+                    <dd><span th:text="${ip}"></span></dd>
+                </dl>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
