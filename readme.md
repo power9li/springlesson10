@@ -1,6 +1,7 @@
 ## 如何开始
 
-**创建docker-machine** docker-machine是运行docker的虚拟机
+**创建docker-machine** 
+docker-machine是运行docker的虚拟机
 windows,macos 上均有对应的安装版本。安装后运行下面脚本创建一个docker-machine实例
 
 ```
